@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./.css">
+  <title>AI-Based Career Guidance System</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #f8f9fa;
+      background: linear-gradient(135deg, #00c6ff, #fd34c7, #00ffcc, #00416a);
+      background-size: 400% 400%;
+      animation: gradientShift 8s ease infinite;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      padding: 40px;
+      margin-top: 80px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+      width: 90%;
+      max-width: 600px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+      color: #e3f2ff;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    label { 
+      font-size: 17px; 
+      color: #e0e0e0; 
+      display: block; 
+      margin-top: 20px; 
+    }
+
+    select, button {
+      padding: 10px 12px;
+      margin: 12px 0;
+      font-size: 16px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 300px;
+      outline: none;
+      transition: all 0.3s;
+    }
+
+    select {
+      border: 2px solid #00ccff;
+      background: rgba(0, 0, 30, 0.5);
+      color: white;
+    }
+
+    select:hover, select:focus {
+      border-color: #00e6ff;
+      box-shadow: 0 0 15px #00e6ff;
+    }
+
+    button {
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      width: 100%;
+      max-width: 240px;
+      box-shadow: 0 4px 20px rgba(0, 114, 255, 0.5);
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #0072ff, #00ffd1);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(0, 255, 209, 0.6);
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #00ffec;
+      background: rgba(0, 30, 60, 0.5);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+      width: 90%;
+      max-width: 500px;
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 30px 20px; }
+      h2 { font-size: 26px; }
+      select, button { font-size: 15px; max-width: 260px; }
+      #result { font-size: 16px; }
+    }
+
+    @media (max-width: 450px) {
+      h2 { font-size: 22px; }
+      .container { padding: 20px; }
+      select, button { width: 90%; font-size: 14px; }
+      #result { width: 95%; font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div class="container">
+      <h2>AI-Based Career Guidance System</h2>
+
+      <label for="interest">Select your main interest:</label>
+      <select id="interest">
+        <option value="">-- Choose an Interest --</option>
+        <option>coding</option>
+        <option>medicine</option>
+        <option>teaching</option>
+        <option>business</option>
+        <option>design</option>
+  </center>
+</body>
+</html>
